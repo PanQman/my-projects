@@ -1,0 +1,178 @@
+body{
+	background-color: #7587a3;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	margin: 0px !important;
+}
+.spanek{
+	color: #c34f4f;
+}
+
+.kontener{
+	width: 100%;
+}
+
+#front{
+	width: 100%;
+	padding: 20px 0px;
+	
+}	
+.logo{
+	width: 300px;
+	font-size: 48px;
+	/*border: 1px dashed #fff;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: #7ece4c;*/
+}
+.menu{
+	width: 100%;
+	padding: 5px 0px;
+	background-color: #b8cdef;
+	text-align: center;
+	/*border-top: 1px solid #fff;
+	border-bottom: 1px solid #ffffff;
+	height: 30px;*/
+}
+.content{
+	width:1000px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+.kafelki{
+	width:100%;
+	text-align: center;
+	background-color: #b8cdef;
+
+}
+.media{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.fb{
+	float:left;
+	width: 250px;
+	height: 155px;
+	
+}
+.fb:hover{
+	background-color: #4668b3;
+}
+
+.yt{
+	float:left;
+	width: 250px;
+	height: 155px;
+}
+.yt:hover{
+	background-color: #d94348;
+}
+.tt{
+	float:left;
+	width: 250px;
+	height: 155px;
+}
+.tt:hover{
+	background-color: #3095d3;
+}
+.gg{
+	float:left;
+	width: 250px;
+	height: 155px;
+}
+.gg:hover{
+	background-color: #d95333;
+}
+
+a.link{
+	color: #ffffff;
+	text-decoration: none;
+}
+.stopka{
+	text-align: center;
+	font-size: 12px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+#img1{
+	width: 500px;
+	height: 500px;
+	padding: 0px 0px 0px 10px;
+	float:right;
+}
+#img2{
+	width: 500px;
+	height: 550px;
+	padding: 10px 20px 0px 0px;
+	float:left;
+}
+.sticky{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0; /*ustalam sobie stałą pozycje*/
+	z-index: 100; /*przybliża do oczu, kojeność czegoś*/
+}
+ol{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px; 
+	height: 36px;
+	line-height: 200%;
+	display: inline-block;/*działa podobnie jak float left, elementy blokowe układają się w linii*/
+}
+ol a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+ol > li{
+	float:left;
+	width: 150px;
+	height: 40px;
+	border-right: 1px dashed #751b1b;
+}
+
+ol > li:first-child{
+	border-left: 1px dashed #751b1b;
+}
+
+ol > li:hover{
+	background-color: #a7bcde;
+
+}ol > li:hover > a{
+	color: #751b1b;
+}
+
+
+ol > li > ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	height: 40px;
+	display: none; /*chowa nam menu*/
+}
+
+ol > li > ul > li{
+	background-color: #a7bcde;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #751b1b;
+}
+
+ol > li:hover > ul{
+	display:block;
+}
+
+ol > li > ul > li:hover{
+	background-color: #751b1b;
+}
+
+ol > li > ul > li:hover > a{
+	color: #b24db7;
+}

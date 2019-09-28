@@ -1,0 +1,90 @@
+	body {
+		background-color: green;
+		color: gray;
+		font-size: 14px;
+		font-family: Arial;
+	}
+	a:link{
+		font-size: 14px;
+	} /*nie wciśnięty link*/
+	a:visited{
+		font-size: 13px;
+	} /*wciśnięty link*/
+	a:havor{
+		font-size: 5px;
+		color: red;
+	} /*po najechaniu myszki na link*/
+	
+	#kontener
+	{
+	width: 700px; /*piksele na nasz kontener, zazwyczaj dajemy 1000*/
+	margin-left: auto; /* wyrównanie do lewej, na dole do prawej */
+	margin-right: auto; /* nie wiemy ile pikseli, strona automatycznie to wyliczy */
+	}
+    #front
+    {
+        background-color: gray;
+        color: black; /*kolor tekstu*/
+        text-align: center; /*wyrównanie do środka (left/center/right)*/
+        padding: 15px 15px 15px 15px; /*wypełnienie diva*/
+		/*wypełniam górę, prawo, dół, lewo
+		wystarczy także samo 15px aby było wokół tak samo*/
+    }
+	    #left1
+    {
+		float: left;
+        background-color: lightgray;
+        min-width: 500 px; 
+		max-height: 249 px;
+        padding-right: 100px;
+		padding-bottom: 161px;
+    }
+		#right1
+    {
+		float: left;
+        background-color: blue;
+        width: 302 px;  /*szerokość w pikselach (stała wartość)*/
+		min-height: 249 px; /*miminalna wysokość*/
+    }
+		#left2
+    {
+		clear: both;
+		float: left;
+        background-color: orange;
+        width: 420 px;  /*szerokość w pikselach (stała wartość)*/
+		min-height: 100 px; /*miminalna wysokość*/
+        padding-bottom: 120px;
+		padding-right: 210px;
+    }
+		#center
+    {
+		float: left;
+        background-color: gray;
+        width: 450 px;  /*szerokość w pikselach (stała wartość)*/
+		min-height: 100 px; /*miminalna wysokość*/
+        padding-bottom: 120px;
+    }
+		#right2
+    {
+		float: left;
+		color: green;
+        background-color: lightgray;
+        width: 130 px;  /*szerokość w pikselach (stała wartość)*/
+		min-height: 100 px; /*miminalna wysokość*/
+        padding-bottom: 79px;
+    }
+		#bot
+    {
+		clear: both;
+		background-color: red;
+		text-align: center;
+        width: 700 px;  /*szerokość w pikselach (stała wartość)*/
+		min-height: 10 px; /*miminalna wysokość*/
+        padding: 5px;
+    }
+	
+	
+	
+	
+
+	

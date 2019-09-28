@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+   /* Weź za cel atrybut data-info który zawiera wartość "external" */
+a[data-info~="external"] {
+   color: red;
+}
+
+/* Który zawiera wartość "image" */
+a[data-info~="image"] {
+  border: 1px solid black;
+}
+}
+</style>
+</head>
+<body>
+
+"<a href="img/mis.jpg" data-info="external image"> Click Me, Fool </a>
+
+</body>
+</html>
