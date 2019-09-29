@@ -58,8 +58,8 @@ public class TwitterMessage {
 
     private void krok2Logowanie(){
         if (waitUntilElementIsVisible(driver, Twitter.loginTextField, 10) != null){
-            enterText(Twitter.loginTextField, "_Adamq12");
-            enterText(Twitter.passwordTextField, "5084c151");
+            enterText(Twitter.loginTextField, "Login");
+            enterText(Twitter.passwordTextField, "Haslo");
             clickElement(Twitter.loginButton);
         } else System.out.println("Nie udało się załadować strony logowania");
     }
