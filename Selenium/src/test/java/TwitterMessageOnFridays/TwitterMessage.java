@@ -41,7 +41,6 @@ public class TwitterMessage {
     @Test
     public void myFirstTest() {
         driver.get("http://twitter.com/login");
-        //krok1PrzejscieDoStronyLogowania();
         krok2Logowanie();
         krok3PrzejscieDoProfilu();
         krok4OtwarcieOknaTweeta();
@@ -50,11 +49,6 @@ public class TwitterMessage {
         krok7PotwierdzUsuniecie();
     }
 
-    private void krok1PrzejscieDoStronyLogowania(){
-        if (waitUntilElementIsVisible(driver, Twitter.buttonToLoginPage, 10) != null){
-            clickElement(Twitter.buttonToLoginPage);
-        } else System.out.println("Nie udało się załadować strony Twitter.com");
-    }
 
     private void krok2Logowanie(){
         if (waitUntilElementIsVisible(driver, Twitter.loginTextField, 10) != null){
@@ -88,8 +82,11 @@ public class TwitterMessage {
         if (waitUntilElementIsVisible(driver, Twitter.firstTweetOptions, 10) != null){
             clickElement(Twitter.firstTweetOptions);
             clickElement(Twitter.deleleTweet);
-            clickElement(Twitter.confirmDeleteTweet);
         } else System.out.println("Błąd w znalezieniu tweeta!");
+
+        if (waitUntilElementIsVisible(driver, Twitter.confirmDeleteTweet, 10) != null){
+            clickElement(Twitter.confirmDeleteTweet);
+        } else System.out.println("");
     }
 
     private void krok7PotwierdzUsuniecie(){

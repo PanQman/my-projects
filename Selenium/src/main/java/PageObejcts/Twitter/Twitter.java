@@ -40,7 +40,7 @@ public class Twitter {
     @FindBy(xpath = "//div[@role='menuitem'][1]")
     public static WebElement deleleTweet;
 
-    @FindBy(css = "confirmationSheetConfirm")
+    @FindBy(css = "[data-testid='confirmationSheetConfirm']")
     public static WebElement confirmDeleteTweet;
 
     @FindBy(xpath = "//span[text()='Twój Tweet został usunięty']")
