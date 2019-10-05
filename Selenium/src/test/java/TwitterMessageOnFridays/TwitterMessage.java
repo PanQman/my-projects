@@ -12,8 +12,7 @@ import org.testng.annotations.Test;
 
 import static Common.Actions.clickElement;
 import static Common.Actions.enterText;
-import static Common.Waits.pauseTest;
-import static Common.Waits.waitUntilElementIsVisible;
+import static Common.Waits.*;
 import static org.testng.Assert.assertTrue;
 
 public class TwitterMessage {
@@ -52,8 +51,8 @@ public class TwitterMessage {
 
     private void krok2Logowanie(){
         if (waitUntilElementIsVisible(driver, Twitter.loginTextField, 10) != null){
-            enterText(Twitter.loginTextField, "Login");
-            enterText(Twitter.passwordTextField, "Haslo");
+            enterText(Twitter.loginTextField, "_Adamq12");
+            enterText(Twitter.passwordTextField, "5084c151");
             clickElement(Twitter.loginButton);
         } else System.out.println("Nie udało się załadować strony logowania");
     }
@@ -65,7 +64,7 @@ public class TwitterMessage {
     }
 
     private void krok4OtwarcieOknaTweeta(){
-        if (waitUntilElementIsVisible(driver, Twitter.createTweet, 10) != null){
+        if (waitUntilElementIsClickable(driver, Twitter.createTweet, 10) != null){
             clickElement(Twitter.createTweet);
         } else System.out.println("Nie udało się załadować strony profilu");
     }
@@ -78,7 +77,7 @@ public class TwitterMessage {
     }
 
     private void krok6UsunTweet(){
-        pauseTest(3);
+        //pauseTest(3);
         if (waitUntilElementIsVisible(driver, Twitter.firstTweetOptions, 10) != null){
             clickElement(Twitter.firstTweetOptions);
             clickElement(Twitter.deleleTweet);
@@ -86,7 +85,7 @@ public class TwitterMessage {
 
         if (waitUntilElementIsVisible(driver, Twitter.confirmDeleteTweet, 10) != null){
             clickElement(Twitter.confirmDeleteTweet);
-        } else System.out.println("");
+        } else System.out.println("Błąd podczas usunięcia tweeta");
     }
 
     private void krok7PotwierdzUsuniecie(){

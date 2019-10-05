@@ -38,12 +38,25 @@ public class Waits {
         } catch (NoSuchElementException | TimeoutException e){
             return null;
         }
-
-        /*
-        WebDriverWait wait = new WebDriverWait(driver, seconds);
-        WebElement visibleElement = wait.until(ExpectedConditions.visibilityOf(element));*/
         return visibleElement;
     }
+
+    public static WebElement waitUntilElementIsClickable(WebDriver driver, WebElement element, int seconds){
+        if (element == null){
+            System.out.println("Cannot wait for visibility of null element");
+            return null;
+        }
+        WebElement clickableElement;
+        try {
+            clickableElement= new WebDriverWait(driver, seconds)
+                    .until(ExpectedConditions.elementToBeClickable(element));
+        } catch (NoSuchElementException | TimeoutException e){
+            return null;
+        }
+        return clickableElement;
+    }
+
+
 
     //Oczekiwanie aż element o podanym lokatorze zniknie
     public static boolean waitUntilElementDissapear(WebDriver driver, WebElement element, int seconds){
@@ -60,6 +73,8 @@ public class Waits {
         }
         return isDissapear;
     }
+
+
 
     //Zatrzymaj test
     public static void pauseTest(int seconds){

@@ -37,7 +37,7 @@ public class Actions {
             return;
         }
         if (!element.getText().equals(text.trim())){
-            System.out.println("Nie wpisano tekstu w pole tekstowe");
+            System.out.println("Wpisano tekst '" + element.getText());
         }
     }
 

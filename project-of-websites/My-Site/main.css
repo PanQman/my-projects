@@ -1,0 +1,122 @@
+body{
+	margin: 0;
+	background-color: #2F3336;
+	color: #efefef;
+	font-family: 'Roboto Mono', sans-serif;
+ 	font-size: 14px;
+}
+.menu-items{
+	list-style-type: none;
+	text-align: center;
+	padding: 10px;
+	font-size: 23px;
+	min-height: 40px;
+	line-height: 200%;
+	padding-bottom: 0px;
+}
+.menu-items > li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 20px;
+}
+.menu-items a{
+	color: white;
+	text-decoration: none;
+}
+.menu-items a:hover{
+	color: #0a2b42;
+}
+.Front{
+	position: relative;
+	text-align: center;
+}
+#imageFront{
+	width: 100%;
+	height: 60%;
+	display: inline;
+}
+.FrontText{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-shadow: 0px 0px 8px #000000;
+	letter-spacing: 3px;
+}
+#Profile{
+	letter-spacing: 5px;
+	font-size: 48px;
+	top: 40%;
+	left: 50%;
+}
+#Job{
+	font-size: 22px;
+	top: 55%;
+	left: 50%;
+}
+.line{
+	background: #03c2fc;
+	width: 20%;
+	height: 1px;
+	margin: auto;
+	margin-bottom: 25px;
+}
+.Omnie{
+	color: white;
+	border: double;
+
+}
+.title{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 3px;
+	width: 100%;
+	float: left;
+	margin-bottom: auto;
+}
+.First{
+	width: 50%;
+	float: left;
+}
+.Second{
+	width: 50%;
+	float: left;
+}
+#ProfilePhoto{
+	width: 40%;
+	max-width: 100%;
+	height: auto;
+	padding: 25px;
+	float: left;
+}
+#PJATKPhoto{
+	width: 50%;
+	max-width: 100%;
+	height: auto;
+	padding: 25px;
+	float: left;
+}
+#AvivaPhoto{
+	width: 80%;
+	max-width: 100%;
+	height: auto;
+	padding: 25px 0px 25px 25px;
+	margin-top: 25px;
+}
+.Doswiadczenie{
+	display: inline-block;
+}
+.leftSide{
+	float: left;
+	width: 30%;
+}
+.rightSide{
+	float: left;
+	width: 70%;
+}
+.Kontakt{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}

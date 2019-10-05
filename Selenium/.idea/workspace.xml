@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="173c2f01-e3a5-4b14-9cc3-1895297348ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObejcts/Twitter/Twitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObejcts/Twitter/Twitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/Waits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Selenium.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TwitterMessageOnFridays/TwitterMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TwitterMessageOnFridays/TwitterMessage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +23,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="93" column="49" lean-forward="true" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
+            <state relative-caret-position="268">
+              <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Common/Waits.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-147">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -43,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Common/Actions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="164">
+              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -58,6 +65,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Nie wpisano tekstu w pole tekstowe</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -65,7 +77,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/PageObejcts/Twitter/Twitter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/Waits.java" />
         <option value="$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/Actions.java" />
       </list>
     </option>
   </component>
@@ -154,8 +168,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569768708516" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569778520025" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Selenium_GRID" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -170,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TwitterMessage.myFirstTest">
+  <component name="RunManager" selected="TestNG.TwitterMessage">
     <configuration name="TwitterMessage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="PACKAGE_NAME" value="" />
@@ -219,9 +233,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TwitterMessage" />
         <item itemvalue="TestNG.TwitterMessage.myFirstTest" />
         <item itemvalue="TestNG.Wsada.myFirstTest" />
-        <item itemvalue="TestNG.TwitterMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -239,21 +253,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 19h 47m 14s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 19h 48m 13s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 19h 54m 11s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 20h 31m 24s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 20h 31m 44s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 20h 32m 01s.xml">
       <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
     </history-entry>
@@ -268,6 +267,21 @@
     </history-entry>
     <history-entry file="TwitterMessage_myFirstTest - 2019.09.29 at 15h 55m 52s.xml">
       <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage - 2019.09.29 at 17h 06m 01s.xml">
+      <configuration name="TwitterMessage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage - 2019.09.29 at 17h 08m 32s.xml">
+      <configuration name="TwitterMessage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage - 2019.09.29 at 17h 18m 13s.xml">
+      <configuration name="TwitterMessage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage - 2019.09.29 at 17h 20m 13s.xml">
+      <configuration name="TwitterMessage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage - 2019.09.29 at 17h 21m 54s.xml">
+      <configuration name="TwitterMessage" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -350,17 +364,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Waits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Common/Actions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="164">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="93" column="49" lean-forward="true" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
+        <state relative-caret-position="268">
+          <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
         </state>
       </provider>
     </entry>
