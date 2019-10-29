@@ -1,23 +1,24 @@
 package TwitterMessageOnFridays;
 
+import Configurations.BrowserOptions.initLocalDriver;
+import Configurations.BrowserType;
 import PageObejcts.Twitter.Twitter;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static Common.Actions.clickElement;
-import static Common.Actions.enterText;
-import static Common.Waits.*;
-import static org.testng.Assert.assertTrue;
+import static Common.CommonActions.*;
+import static Common.Waits.waitUntilElementIsClickable;
+import static Common.Waits.waitUntilElementIsVisible;
+import static Configurations.BrowserOptions.initLocalDriver.getTypeOfBrowser;
 
 public class TwitterMessage {
 
-    private WebDriver driver;
+    private static WebDriver driver;
+    private static BrowserType browserType;
+
     String message = "Today is Friday, so..";
        /*     "       ✨\n" +
             "✨    DON'T  ✨\n" +
@@ -31,15 +32,30 @@ public class TwitterMessage {
             "         ";*/
 
     @BeforeMethod
-    public void beforeTest() {
-        System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
-        driver = new ChromeDriver();
+    public void initalizeWebElements(){
+        if (browserType == null){
+            browserType = getTypeOfBrowser();
+            driver = new initLocalDriver(browserType).getBrowser();
+        } else {
+            driver = new initLocalDriver(browserType).getBrowser();
+        }
+        driver.manage().window().maximize();
+
+
         PageFactory.initElements(driver, Twitter.class);
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.close();
+        if (!getTypeOfBrowser().equals(BrowserType.FIREFOX)){
+            driver.quit();
+        }
     }
 
     @Test
     public void myFirstTest() {
-        driver.get("http://twitter.com/login");
+        navigateToURL("http://twitter.com/login");
         krok2Logowanie();
         krok3PrzejscieDoProfilu();
         krok4OtwarcieOknaTweeta();
@@ -77,7 +93,6 @@ public class TwitterMessage {
     }
 
     private void krok6UsunTweet(){
-        //pauseTest(3);
         if (waitUntilElementIsVisible(driver, Twitter.firstTweetOptions, 10) != null){
             clickElement(Twitter.firstTweetOptions);
             clickElement(Twitter.deleleTweet);
@@ -94,10 +109,4 @@ public class TwitterMessage {
         } else System.out.println("Nie znaleziono komunikatu o usunięciu tweeta");
     }
 
-
-    @AfterMethod
-    public void afterTest() {
-        driver.close();
-        driver.quit();
-    }
 }

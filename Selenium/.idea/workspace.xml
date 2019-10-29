@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/Common/CommonActions.java" line="5" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="173c2f01-e3a5-4b14-9cc3-1895297348ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Common/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Common/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/Waits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Configurations/BrowserOptions/initLocalDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Configurations/BrowserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Configurations/ConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Configurations/PropertiesLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/CommonActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/Actions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TwitterMessageOnFridays/TwitterMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TwitterMessageOnFridays/TwitterMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-of-websites/My-Site/fontello/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/../project-of-websites/My-Site/fontello/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-of-websites/My-Site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../project-of-websites/My-Site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-of-websites/My-Site/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../project-of-websites/My-Site/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,24 +29,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/PropertiesLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+            <state relative-caret-position="546">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Common/Waits.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/ConfigProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
-              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            <state relative-caret-position="252">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/BrowserOptions/initLocalDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#1726#1727#0" expanded="true" />
+                <element signature="e#1760#1761#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/BrowserType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,17 +103,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PageObejcts/Twitter/Twitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+            <state relative-caret-position="735">
+              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Common/Actions.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Common/CommonActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="63">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +126,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -78,14 +144,33 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/PageObejcts/Twitter/Twitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Common/Waits.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/BrowserTypes/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/configuration.properties.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/BrowserTypes/BrowserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/BrowserTypes/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/BrowserTypes/BrowserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations1/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations1/BrowserTypes/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations1/BrowserOptions/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations1/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/PropertiesLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/ConfigProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/configuration.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Common/Actions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/DriverConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/BrowserOptions/BrowserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/CommonActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/BrowserOptions/initLocalDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configurations/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
+    <option name="x" value="175" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -97,7 +182,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,7 +221,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Configurations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimplySelenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Twitter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimplySelenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimplySelenium" type="b2602c69:ProjectViewProjectNode" />
@@ -164,13 +263,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569778520025" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Selenium_GRID" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572376484749" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -184,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TwitterMessage">
+  <component name="RunManager" selected="TestNG.TwitterMessage.myFirstTest">
     <configuration name="TwitterMessage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="PACKAGE_NAME" value="" />
@@ -233,8 +333,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TwitterMessage" />
         <item itemvalue="TestNG.TwitterMessage.myFirstTest" />
+        <item itemvalue="TestNG.TwitterMessage" />
         <item itemvalue="TestNG.Wsada.myFirstTest" />
       </list>
     </recent_temporary>
@@ -253,21 +353,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 20h 32m 01s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.11 at 20h 33m 08s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.29 at 15h 50m 40s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.29 at 15h 54m 30s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TwitterMessage_myFirstTest - 2019.09.29 at 15h 55m 52s.xml">
-      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TwitterMessage - 2019.09.29 at 17h 06m 01s.xml">
       <configuration name="TwitterMessage" configurationId="TestNG" />
     </history-entry>
@@ -283,22 +368,36 @@
     <history-entry file="TwitterMessage - 2019.09.29 at 17h 21m 54s.xml">
       <configuration name="TwitterMessage" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TwitterMessage_myFirstTest - 2019.10.15 at 18h 43m 23s.xml">
+      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage_myFirstTest - 2019.10.19 at 15h 37m 47s.xml">
+      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage_myFirstTest - 2019.10.27 at 19h 02m 09s.xml">
+      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage_myFirstTest - 2019.10.27 at 19h 02m 44s.xml">
+      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TwitterMessage_myFirstTest - 2019.10.29 at 20h 13m 31s.xml">
+      <configuration name="TwitterMessage.myFirstTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22281879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -306,6 +405,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -357,31 +457,105 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObejcts/Twitter/Twitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Common/Waits.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state relative-caret-position="798">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Actions.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="227">
+          <caret line="883" column="25" selection-start-line="883" selection-start-column="25" selection-end-line="883" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/DriverConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/PropertiesLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/BrowserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObejcts/Twitter/Twitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/BrowserOptions/initLocalDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/CommonActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configurations/ConfigProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TwitterMessageOnFridays/TwitterMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
         </state>
       </provider>
     </entry>

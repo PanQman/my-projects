@@ -60,14 +60,32 @@
 				</div>
 				<div class="Edukacja">
 					<img id="PJATKPhoto" src="img/PJATK.jpg" alt="imageProfile">
-					<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+					<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis maximus venenatis. Maecenas magna dolor, laoreet in iaculis at, mollis sit amet eros. Aliquam erat volutpat. Proin placerat tellus sed mi congue, id ultricies justo finibus. Quisque porttitor ac lorem eget blandit. Phasellus elementum erat vel nisi tristique, quis dapibus ante rhoncus.</a>
 				</div>
 
 			</div>
 			<div class="Second">
 
 				<div class="Skills">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt aliquam diam, eu eleifend tellus bibendum a. Donec consectetur nunc nibh, vitae accumsan dolor viverra nec.</p>
+					<div class="Tools">
+						<p>Java</p>
+						<p>Selenium</p>
+						<p>SQL</p>
+						<p>GIT</p>
+						<p>UML</p>
+						<p>HTML/CSS</p>
+
+
+					</div>
+					<div class="Rating">
+						<p>5/10</p>
+						<p>4/10</p>
+						<p>5/10</p>
+						<p>6/10</p>
+						<p>7/10</p>
+						<p>5/10</p>
+
+					</div>
 				</div>
 
 
@@ -93,7 +111,7 @@
 
 		<section class="Kontakt">
 			<header class="title">
-				<h1>KONTAKT</h1>
+				<h1 class="title2">KONTAKT</h1>
 				<div class="line"></div>
 			</header>
 			<a>Chętnie nawiążę kontakt z nowymi osobami, nie tylko z branży</a>
@@ -102,9 +120,55 @@
 			<a href="mailto:adampaz@interia.pl" class="icon-mail"></a>
 			<a id="linkedin" href="https://www.linkedin.com/in/adam-pa%C5%BA-b8107613b/" class="icon-linkedin-squared"></a>
 			<a href="https://github.com/PanQman" class="icon-github-circled"></a>
-
-
 		</section>
+
+		<div class="WriteToMe">
+			<form method="post">
+				<div>
+					<input class="contactMe" type="text" name="imie" placeholder="Twoje imię (wymagane)">
+					<input class="contactMe" type="text" name="nazwisko" placeholder="Twoje nazwisko (wymagane)">
+				</div>
+
+				<div>
+					<input id="Opis" class="contactMe" type="text" name="Opis" placeholder="Napisz do mnie (wymagane)">
+				</div>
+				<div class="ListOption">
+					<select id="ListOfOptions">
+					  <option value="Oferta">Oferta Pracy</option>
+					  <option value="Znajmosc">Znajmość</option>
+					  <option value="Pomoc">Pomoc</option>
+					</select>
+				</div>
+				<div id="checkList">
+					<div class="checkListOption"><input type="checkbox">Java</div>
+					<div class="checkListOption"><input type="checkbox">Selenium</div>
+					<div class="checkListOption"><input type="checkbox">HTML/CSS</div>
+					<div class="checkListOption"><input type="checkbox">SQL</div>
+				</div>
+
+				<div id="ChooseList">
+
+					<div class="ChooseOption">
+						<input type="radio" id="kobieta" name="radiob" value="kobieta" checked><label for="kobieta">Kobieta</label>
+					</div>
+					<br>
+					<div class="ChooseOption">
+						<input type="radio" id="facet" name="radiob" value="facet"><label for="Mężczyzna">Mężczyzna</label>
+					</div>
+
+				</div>
+
+				<div class="email">
+					<input id="emailInput" type="text" name="email" placeholder="Twój e-mail (wymagane)">
+				</div>
+
+				<div class="Buttons">
+					<input type="submit" value="Wyślij">
+					<input type="reset" value="Wyczyść">
+				</div>
+
+			</form>
+		</div>
 
 </main>
 </div>

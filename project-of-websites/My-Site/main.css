@@ -63,7 +63,6 @@ body{
 .Omnie{
 	color: white;
 	border: double;
-
 }
 .title{
 	font-size: 30px;
@@ -74,29 +73,60 @@ body{
 	margin-bottom: auto;
 }
 .First{
-	width: 50%;
+	width: 70%;
 	float: left;
 }
 .Second{
-	width: 50%;
+	width: 30%;
 	float: left;
+	text-align: center;
+	display: block;
 }
+.Edukacja{
+	float: left;
+	margin-top: 25px;
+	padding: 25px;
+}
+.Tools{
+	weight: 70%;
+	height: auto;
+	float: left;
+	text-align: right;
+	padding: 5px;
+	margin-left: 10%;
+	padding: 5px;
+
+	font-size: 17px;
+	font-style: italic;
+}
+.Rating{
+	weight: 30%;
+	height: auto;
+	float: left;
+	margin-left: 10%;
+	padding: 5px;
+	color: #00FF7F;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: 600;	
+}
+
 #ProfilePhoto{
-	width: 40%;
-	max-width: 100%;
+	width: 20%;
+	max-width: 60%;
 	height: auto;
 	padding: 25px;
 	float: left;
 }
 #PJATKPhoto{
-	width: 50%;
-	max-width: 100%;
+	width: 40%;
+	max-width: 80%;
 	height: auto;
-	padding: 25px;
 	float: left;
+	padding-right: 25px;
 }
 #AvivaPhoto{
-	width: 80%;
+	width: 60%;
 	max-width: 100%;
 	height: auto;
 	padding: 25px 0px 25px 25px;
@@ -104,6 +134,8 @@ body{
 }
 .Doswiadczenie{
 	display: inline-block;
+	margin-bottom: 75px;
+	margin-top: 50px;
 }
 .leftSide{
 	float: left;
@@ -114,9 +146,97 @@ body{
 	width: 70%;
 }
 .Kontakt{
+	background-color: #E4E4E4;
+	color: #000000;
 	padding-top: 20px;
 	padding-bottom: 40px;
 	display: inline-block;
 	width: 100%;
 	text-align: center;
+	font-size: 20px;
+}
+.title2{
+	color: #5B5B5B;
+}
+.WriteToMe{
+
+	height: 60%;
+	width: 100%;
+	margin-top: 40px;
+
+	text-align: center;
+}
+.contactMe{
+	height: 5px;
+	width: 205px;
+	padding: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#Opis{
+	margin-top: 25px;
+	height: 130px;
+	width: 410px;
+}
+.ListOption{
+	display: block;
+	height: 45px;
+	width: 100%;
+}
+#ListOfOptions{
+	float: left;
+	margin-left: 30%;
+	margin-top: 15px;
+	height: 30px;
+	width: 135px;
+}
+#checkList{
+	margin-top: 15px;
+	margin-left: 29%;
+	text-align: left;
+}
+.checkListOption{
+	padding: 4px;
+}
+#ChooseList{
+	margin-top: 15px;
+	margin-left: 29%;
+	float: left;
+}
+.ChooseOption{
+	font-weight: bold;
+	padding: 5px;
+	float: left;
+	text-align: center;
+}
+.email{
+	width: 100%;
+	height: 50px;
+	float: left;
+	margin-top: 15px;
+}
+#emailInput{
+	height: 30px;
+	width: 200px;
+	padding: 5px;
+}
+.Buttons{
+	margin-top: 15px;
+	float: left;
+	height: 50px;
+	width: 100%;
+}
+.SendMessage{
+	float: left;
+	height: 30px;
+	width: 80px;
+	padding: 20px;
+}
+#kobieta{
+	float: left;
+	text-align: left;
+}
+#facet{
+	float: left;
+	text-align: left;
 }
