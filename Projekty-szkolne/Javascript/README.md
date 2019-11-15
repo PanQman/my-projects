@@ -1,5 +1,2 @@
-Napisany przeze mnie projekt w trakcie studiów. 
-Projekt zawiera zaimplementowany jeden przypadek użycia, czyli zmiana agenta w trakcie życia polisy.
-Szczegóły opis wymagań znajduje się w pliku System Zarządzania Polisami.pdf
-
-Projekt został napisany w ramach przedmiotu Modelowanie i Analiza Systemów Informacyjnych (MAS) w uczelni PJATK w Warszawie, w połowie 2019r.
+Tutaj będę zamieszczał napisany przeze mnie kod Javascript. 
+Znajdują się tutaj wykonane ćwiczenia (TIN - Technologie Internetu) podczas studiów na PJATK
