@@ -1,12 +1,10 @@
 package Common;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.io.ObjectOutputStream;
-
 import static Configurations.BrowserOptions.initLocalDriver.driver;
+import static Common.Waits.pauseTest;
 
 public class CommonActions {
 
@@ -28,7 +26,6 @@ public class CommonActions {
             scrollToElement(element);
         }
         if (element.isDisplayed()){
-            //Waits.pauseTest(1);
             element.click();
         }
 
@@ -38,7 +35,7 @@ public class CommonActions {
     public static void enterText(WebElement element, String text){
         if (element.isDisplayed() & element.isEnabled()){
             element.clear();
-            Waits.pauseTest(1);
+            pauseTest(1);
         element.sendKeys(text);
         } else {
             System.out.println("Pole tekstowe jest niedostępne");
@@ -56,10 +53,6 @@ public class CommonActions {
             boolean isChecked = element.getAttribute("checked").equals("true");
             element.click();
             Waits.pauseTest(1);
-
-            if (isChecked){
-
-            }
         }
 
     }
