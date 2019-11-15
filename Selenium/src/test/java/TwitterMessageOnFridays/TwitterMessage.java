@@ -3,6 +3,8 @@ package TwitterMessageOnFridays;
 import Configurations.BrowserOptions.initLocalDriver;
 import Configurations.BrowserType;
 import PageObejcts.Twitter.Twitter;
+import io.qameta.allure.Step;
+import jdk.jfr.Description;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
@@ -32,8 +34,9 @@ public class TwitterMessage {
             "         ";*/
 
     @BeforeMethod
-    public void initalizeWebElements(){
-        if (browserType == null){
+    @Step("Inicjalizacja elementów")
+    public void initalizeWebElements() {
+        if (browserType == null) {
             browserType = getTypeOfBrowser();
             driver = new initLocalDriver(browserType).getBrowser();
         } else {
@@ -46,15 +49,17 @@ public class TwitterMessage {
     }
 
     @AfterMethod
+    @Step("Zamknięcie testów")
     public void tearDown() {
         driver.close();
-        if (!getTypeOfBrowser().equals(BrowserType.FIREFOX)){
+        if (!getTypeOfBrowser().equals(BrowserType.FIREFOX)) {
             driver.quit();
         }
     }
 
     @Test
-    public void myFirstTest() {
+    @Description("Utworzenie tweeta na profilu, następnie jego usunięcie")
+    public void tweetMessage() {
         navigateToURL("http://twitter.com/login");
         krok2Logowanie();
         krok3PrzejscieDoProfilu();
@@ -65,46 +70,46 @@ public class TwitterMessage {
     }
 
 
-    private void krok2Logowanie(){
-        if (waitUntilElementIsVisible(driver, Twitter.loginTextField, 10) != null){
+    private void krok2Logowanie() {
+        if (waitUntilElementIsVisible(driver, Twitter.loginTextField, 10) != null) {
             enterText(Twitter.loginTextField, "_Adamq12");
             enterText(Twitter.passwordTextField, "5084c151");
             clickElement(Twitter.loginButton);
         } else System.out.println("Nie udało się załadować strony logowania");
     }
 
-    private void krok3PrzejscieDoProfilu(){
-        if (waitUntilElementIsVisible(driver, Twitter.profilButton, 10) != null){
+    private void krok3PrzejscieDoProfilu() {
+        if (waitUntilElementIsVisible(driver, Twitter.profilButton, 10) != null) {
             clickElement(Twitter.profilButton);
         } else System.out.println("Nie udało się zalogować");
     }
 
-    private void krok4OtwarcieOknaTweeta(){
-        if (waitUntilElementIsClickable(driver, Twitter.createTweet, 10) != null){
+    private void krok4OtwarcieOknaTweeta() {
+        if (waitUntilElementIsClickable(driver, Twitter.createTweet, 10) != null) {
             clickElement(Twitter.createTweet);
         } else System.out.println("Nie udało się załadować strony profilu");
     }
 
-    private void krok5UtworzTweet(){
-        if (waitUntilElementIsVisible(driver, Twitter.tweetTextField, 10) != null){
+    private void krok5UtworzTweet() {
+        if (waitUntilElementIsVisible(driver, Twitter.tweetTextField, 10) != null) {
             enterText(Twitter.tweetTextField, message);
             clickElement(Twitter.tweetButton);
         } else System.out.println("Nie udało się otworzyć okna napisania tweeta");
     }
 
-    private void krok6UsunTweet(){
-        if (waitUntilElementIsVisible(driver, Twitter.firstTweetOptions, 10) != null){
+    private void krok6UsunTweet() {
+        if (waitUntilElementIsVisible(driver, Twitter.firstTweetOptions, 10) != null) {
             clickElement(Twitter.firstTweetOptions);
             clickElement(Twitter.deleleTweet);
         } else System.out.println("Błąd w znalezieniu tweeta!");
 
-        if (waitUntilElementIsVisible(driver, Twitter.confirmDeleteTweet, 10) != null){
+        if (waitUntilElementIsVisible(driver, Twitter.confirmDeleteTweet, 10) != null) {
             clickElement(Twitter.confirmDeleteTweet);
         } else System.out.println("Błąd podczas usunięcia tweeta");
     }
 
-    private void krok7PotwierdzUsuniecie(){
-        if (waitUntilElementIsVisible(driver, Twitter.popupDeletedTweet, 30) != null){
+    private void krok7PotwierdzUsuniecie() {
+        if (waitUntilElementIsVisible(driver, Twitter.popupDeletedTweet, 30) != null) {
             System.out.println("Test pozytywny");
         } else System.out.println("Nie znaleziono komunikatu o usunięciu tweeta");
     }
