@@ -1,0 +1,26 @@
+﻿<Window x:Class="Zadanie3.Zadanie3i4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie3"
+        mc:Ignorable="d"
+        Title="Zadanie3i4" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <DataGrid x:Name="StudentsGrid" Margin="0,-6,-0.4,277" MouseDoubleClick="StudentsGrid_MouseDoubleClick" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Imie" Binding="{Binding Imie}"/>
+                <DataGridTextColumn Header="Nazwisko" Binding="{Binding Nazwisko}"/>
+                <DataGridTextColumn Header="Nr indeksu" Binding="{Binding Nrindeksu}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Margin="29,172,710.6,205">Imię</Label>
+        <TextBox Height="50" Margin="117,221,26.6,149" x:Name="nazwiskoBox"/>
+        <Label Margin="21,231,710.6,149">Nazwisko</Label>
+        <TextBox Height="50" Margin="117,277,26.6,93" x:Name="indeksBox"/>
+        <Label Margin="21,289,699.6,93">Nr indeksu</Label>
+        <TextBox Height="50" Margin="117,165,26.6,205" x:Name="imieBox"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="117,362,0,0" VerticalAlignment="Top" Width="75" x:Name="Dodaj" Click="Dodaj_Click"/>
+        <Button Content="Usuń" HorizontalAlignment="Left" Margin="637,362,0,0" VerticalAlignment="Top" Width="75" x:Name="Usun" Click="Usun_Click"/>
+    </Grid>
+</Window>

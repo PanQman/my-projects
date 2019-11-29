@@ -1,0 +1,17 @@
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\bin\Debug\DeansOffice.exe.config
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\bin\Debug\DeansOffice.exe
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\bin\Debug\DeansOffice.pdb
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice.csprojAssemblyReference.cache
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\MainWindow.g.cs
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\App.g.cs
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice_MarkupCompile.cache
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice_MarkupCompile.lref
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\MainWindow.baml
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice.g.resources
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice.Properties.Resources.resources
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice.csproj.GenerateResource.cache
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice.csproj.CoreCompileInputs.cache
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice.exe
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DeansOffice.pdb
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DAL\Window1.g.cs
+C:\Users\Adam\source\repos\DeansOffice\DeansOffice\obj\Debug\DAL\Window1.baml

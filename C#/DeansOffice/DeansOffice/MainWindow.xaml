@@ -1,0 +1,36 @@
+﻿<Window x:Class="DeansOffice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeansOffice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="475.2" Width="753.2">
+    <Grid>
+
+        <Label Margin="10,75,526.2,304.6" FontSize="28" Content="Lista studentów"/>
+        <Label FontSize="18" Margin="10,36,683.2,375.6" Height="200">Plik</Label>
+        <DataGrid Name="StudentsDataGrid" Grid.ColumnSpan="2" Grid.Row="2" AutoGenerateColumns="False"
+                  HorizontalAlignment="Left" Height="239" Margin="10,130,0,0" VerticalAlignment="Top" 
+                  Width="709" SelectionChanged="StudentsDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nazwisko" Binding="{Binding Nazwisko}"/>
+                <DataGridTextColumn Header="Imie" Width="90" Binding="{Binding Imie}"/>
+                <DataGridTextColumn Header="Numer Indeksu" Width="140" Binding="{Binding NrIndeksu}" />
+                <DataGridTextColumn Header="Adres" Width="150" Binding="{Binding Adres}" />
+                <DataGridTextColumn Header="Studia" Width="260" Binding="{Binding Studia}"/>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <Button Name="Dodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="488,391,0, 0" VerticalAlignment="Top" Width="82" Click="Dodaj_Click" Height="37"/>
+        <Button Name="Usun" Content="Usuń" HorizontalAlignment="Left" Margin="627,391,0,0"
+                VerticalAlignment="Top" Width="82" Click="Usun_Click" Height="37"/>
+        <Label Name="myLabel" Content="{Binding IdCounter}" Margin="75,397,642.2,17.6"/>
+        <Label Content="Wybrałeś" HorizontalAlignment="Left" Margin="10,397,0,0" VerticalAlignment="Top" Height="31" Width="62"/>
+        
+        <Label Content="Studentów" HorizontalAlignment="Left" Margin="110,397,0,0" VerticalAlignment="Top" Height="31" Width="71"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="747" Margin="0,36,0,0"/>
+    </Grid>
+    
+</Window>

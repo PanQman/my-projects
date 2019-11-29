@@ -1,0 +1,22 @@
+﻿<Window x:Class="Zadanie3.Zadanie2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie3"
+        mc:Ignorable="d"
+        Title="Zadanie2" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Label Margin="10 100 50 0">Wybierz Status</Label>
+        <ComboBox x:Name="Lista" Margin="124,86,169.6,284" Width="500" Height="50" SelectionChanged="Lista_SelectionChanged">
+            <ComboBox.Items>
+                <ComboBoxItem>Student</ComboBoxItem>
+                <ComboBoxItem>Urlop</ComboBoxItem>
+                <ComboBoxItem>Absolwent</ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+        <Label Margin="23,231,126.6,69">Status student to</Label>
+        <TextBox x:Name="TextBoxMethod" Width="750" Height="50" Margin="23,262,20.6,108"></TextBox>
+        <Button Click="Zamknij" Height="50" Margin="621,321,49.6,49" >Zamknij</Button>
+    </Grid>
+</Window>

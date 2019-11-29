@@ -1,0 +1,39 @@
+﻿<Window x:Class="DeansOffice1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeansOffice1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="475.2" Width="753.2">
+    <Grid>
+
+        <Label Margin="10,75,504.2,304.6" FontSize="28" Content="Lista studentów"/>
+        <Label FontSize="18" Margin="10,36,683.2,375.6" Height="200">Plik</Label>
+        <DataGrid Name="StudentsDataGrid" AutoGenerateColumns="False"
+                  HorizontalAlignment="Left" Height="239" Margin="0,130,0,0" VerticalAlignment="Top" 
+                   SelectionChanged="StudentsDataGrid_SelectionChanged" 
+                  MouseDoubleClick="StudentsDataGrid_MouseDoubleClick" CanUserAddRows="False"
+                  MinWidth="350" MaxWidth="750" Width="747"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn MinWidth="40" Header="Nazwisko" MaxWidth="90"  Binding="{Binding Nazwisko, Mode=TwoWay}"/>
+                <DataGridTextColumn MinWidth="50" Header="Imie" MaxWidth="90" Binding="{Binding Imie, Mode=TwoWay}"/>
+                <DataGridTextColumn MinWidth="35" Header="Numer Indeksu" MaxWidth="140" Binding="{Binding NrIndeksu, Mode=TwoWay}" />
+                <DataGridTextColumn MinWidth="400" Header="Adres" MaxWidth="500" Binding="{Binding Adres, Mode=TwoWay}" />
+                <DataGridTextColumn MinWidth="100" Header="Studia" MaxWidth="150" Binding="{Binding Studia, Mode=TwoWay}"/>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <Button Name="Dodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="488,391,0, 0" VerticalAlignment="Top" Width="82" Click="Dodaj_Click" Height="37"/>
+        <Button Name="Usun" Content="Usuń" HorizontalAlignment="Left" Margin="627,391,0,0"
+                VerticalAlignment="Top" Width="82" Click="Usun_Click" Height="37"/>
+        <Label Name="myLabel" Content="{Binding IdCounter}" Margin="75,397,642.2,17.6"/>
+        <Label Content="Wybrałeś" HorizontalAlignment="Left" Margin="10,397,0,0" VerticalAlignment="Top" Height="31" Width="62"/>
+
+        <Label Content="Studentów" HorizontalAlignment="Left" Margin="110,397,0,0" VerticalAlignment="Top" Height="31" Width="71"/>
+        <Border BorderBrush="Black" BorderThickness="1" Height="39" VerticalAlignment="Top" Margin="0,36,0.2,0"/>
+    </Grid>
+
+</Window>
