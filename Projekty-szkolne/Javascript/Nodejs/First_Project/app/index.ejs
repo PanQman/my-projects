@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Express</title>
+</head>
+<body>
+    <form action="/formdata/" method="post">
+        Imię: <input name="firstName" type="text" /> <br/><br/>
+        Nazwisko: <input name="lastName" type="text" /> <br/><br/>
+        Wiek: <input name="age" type="text" /> <br/><br/>
+        <input type="submit" />
+    </form>
+
+    <h2>Personalia</h2>
+    Imię: <p><%= firstName %></p><br/>
+    Nazwisko: <p><%= lastName %></p><br/>
+    Wiek: <p><%= age %></p><br/>
+</body>
+</html>

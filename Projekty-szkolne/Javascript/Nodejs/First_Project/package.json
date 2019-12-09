@@ -9,6 +9,7 @@
   "author": "",
   "license": "EPL-2.0",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.13.4"
   }
 }
