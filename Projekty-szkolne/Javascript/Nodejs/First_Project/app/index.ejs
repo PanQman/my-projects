@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <meta charset="utf-8" />
     <title>Express</title>
@@ -11,10 +11,9 @@
         Wiek: <input name="age" type="text" /> <br/><br/>
         <input type="submit" />
     </form>
-
     <h2>Personalia</h2>
-    Imię: <p><%= firstName %></p><br/>
-    Nazwisko: <p><%= lastName %></p><br/>
-    Wiek: <p><%= age %></p><br/>
+    Imię: <p><%= (typeof firstName != "undefined" ? firstName : "") %></p><br/>
+    Nazwisko: <p><%= (typeof lastName != "undefined" ? lastName : "") %></p><br/>
+    Wiek: <p><%= (typeof age != "undefined" ? age : "") %></p><br/>
 </body>
 </html>

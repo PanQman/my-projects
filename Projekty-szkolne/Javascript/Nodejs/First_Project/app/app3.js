@@ -8,8 +8,6 @@ app.set('view engine', 'ejs');
 
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }));
-var jsonEx = require(path.join(__dirname, '\jsonExample.json'));
-
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
@@ -48,12 +46,3 @@ app.post('/formdata/',function(req,res) {
     //})
 });
 //node .\First_Project\app\app2.js
-
-app.get('/jsondata',function(req, res) {
-  console.log(__dirname + 'jsonExample.json');
-  var jsonData = {
-    title: "Przykład z danymi typu Json",
-    jsonExample: jsonEx
-  };
-  res.render((path.join(__dirname + '/index3.ejs')), jsonData);
-});
