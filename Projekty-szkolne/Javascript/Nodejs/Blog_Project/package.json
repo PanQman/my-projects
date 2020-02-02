@@ -1,0 +1,29 @@
+{
+  "name": "node-js-blog",
+  "version": "0.0.1",
+  "description": "Projekt bloga utworzonego w Nodejs i MsSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Paź s15269",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect": "^3.7.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.1",
+    "express-fileupload": "^1.1.6",
+    "express-session": "^1.17.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.1.0",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2",
+    "puppeteer": "^2.1.0",
+    "req-flash": "0.0.3",
+    "sequelize": "^5.21.3",
+    "sqlite3": "^4.1.1",
+    "startbootstrap-clean-blog": "^5.0.8"
+  }
+}

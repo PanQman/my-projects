@@ -1,0 +1,40 @@
+@layout('layouts.app')
+ 
+@section('content')
+    <!-- Page Header -->
+    <header class="masthead">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>{{ post.title }}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            {{ post.post }}
+          </div>
+          @if(user.permission_id === 1)
+          <form action="/post/delete/{{post.id}}" method="POST"> 
+            <button name="deletePost" class="btn btn-success mb-2" type="submit" formmethod="POST">Usuń</button>
+          </form>
+          @endif
+          @if(user.permission_id !== 3)
+          <form action="/editpost/{{post.id}}" method="GET"> 
+            <button name="editPost" class="btn btn-success mb-2" type="submit" formmethod="GET">Modyfikuj</button>
+          </form>
+          @endif
+        </div>
+      </div>
+    </article>
+ 
+    <hr>  
+@endsection

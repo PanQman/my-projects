@@ -1,0 +1,46 @@
+@layout('layouts.app')
+ 
+@section('content')
+
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Zmodyfikuj swój post</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+   
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <form action="/editpost/{{post.id}}" method="POST">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Title</label>
+              <input type="text" name="title" placeholder="Title" class="form-control" required pattern=".{5,}" title="Co najmniej 5 znaków"
+               value={{post.title}} />
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Post</label>
+              <textarea name="post" placeholder="Description ..." cols="30" rows="10" 
+                class="form-control" required minlength=100 title="Co najmniej 100 znaków" >{{post.post}}</textarea>
+            </div>
+          </div>
+          <div class="form-group my-4 text-center">
+            <button class="btn btn-primary">Zatwierdź zmianę</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+<hr>
+@endsection

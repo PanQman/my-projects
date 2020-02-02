@@ -1,76 +1,64 @@
-var express = require('express');
-var routes = require('./routes');
-var tasks = require('./routes/tasks');
-var http = require('http');
-var path = require('path');
-var mongoskin = require('mongoskin');
-var db = mongoskin.db('mongodb://localhost:27017/todo?auto_reconnect', {safe:true});
-var app = express();
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Red Hat, Inc. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
 
-var favicon = require('serve-favicon'),
-  logger = require('morgan'),
-  bodyParser = require('body-parser'),
-  methodOverride = require('method-override'),
-  cookieParser = require('cookie-parser'),
-  session = require('express-session'),
-  csrf = require('csurf'),
-  errorHandler = require('errorhandler');
+const express = require('express')
+const path = require('path');
+const app = express();
+const bodyParser = require('body-parser')
+const messages = require('./routes/messages')
+const index = require('./routes/index')
 
-app.use(function(req, res, next) {
-  req.db = {};
-  req.db.tasks = db.collection('tasks');
-  next();
-})
-app.locals.appname = 'Express.js Todo App'
-app.locals.moment = require('moment');
+const util = require('./utils')
 
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-app.use(favicon(path.join('public','favicon.ico')));
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(methodOverride());
-app.use(cookieParser('CEAF3FA4-F385-49AA-8FE4-54766A9874F1'));
-app.use(session({
-  secret: '59B93087-78BC-4EB9-993A-A61FC844F6C9',
-  resave: true,
-  saveUninitialized: true
-}));
-app.use(csrf());
+// Connect to MongoDB, will retry only once
+messages.connectToMongoDB()
 
-app.use(require('less-middleware')(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(function(req, res, next) {
-  res.locals._csrf = req.csrfToken();
-  return next();
-})
+app.set("view engine", "pug")
+app.set("views", path.join(__dirname, "views"))
 
-app.param('task_id', function(req, res, next, taskId) {
-  req.db.tasks.findById(taskId, function(error, task){
-    if (error) return next(error);
-    if (!task) return next(new Error('Task is not found.'));
-    req.task = task;
-    return next();
-  });
+const router = express.Router()
+app.use(router)
+
+app.use(express.static('public'))
+router.use(bodyParser.urlencoded({ extended: false }))
+
+// Starts an http server on the 8080 port
+const PORT = 8089;
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+  console.log('Press Ctrl+C to quit.');
 });
 
-app.get('/', routes.index);
-app.get('/tasks', tasks.list);
-app.post('/tasks', tasks.markAllCompleted)
-app.post('/tasks', tasks.add);
-app.post('/tasks/:task_id', tasks.markCompleted);
-app.delete('/tasks/:task_id', tasks.del);
-app.get('/tasks/completed', tasks.completed);
-
-app.all('*', function(req, res){
-  res.status(404).send();
+// Handles GET request to /
+router.get("/", async (req, res) => {
+  // retrieve list of messages from the db, and use them to render the HTML template
+  let savedMessages = await index.getMessages();
+  console.log(`Read all mesages`)
+  const result = util.formatMessages(savedMessages)
+  res.render("home", { messages: result })
 })
-// development only
-if ('development' == app.get('env')) {
-  app.use(errorHandler());
-}
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+
+// Handles POST request to /post
+router.post('/post', (req, res) => {
+  console.log(`received request: ${req.method} ${req.url}`)
+
+  // validate request
+  const name = req.body.name
+  const message = req.body.message
+  if (!name || name.length == 0) {
+    res.status(400).send("name is not specified")
+    return
+  }
+
+  if (!message || message.length == 0) {
+    res.status(400).send("message is not specified")
+    return
+  }
+
+  // send the new message to the db and redirect to the homepage
+  console.log(`posting to db: name: ${name} body: ${message}`)
+  index.setMessage(name, message)
+  res.redirect('/')
 });
