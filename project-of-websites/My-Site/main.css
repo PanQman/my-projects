@@ -1,242 +1,279 @@
-body{
-	margin: 0;
-	background-color: #2F3336;
-	color: #efefef;
-	font-family: 'Roboto Mono', sans-serif;
- 	font-size: 14px;
+body {
+  margin: 0;
+  background-color: #2F3336;
+  color: #efefef;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
 }
-.menu-items{
-	list-style-type: none;
-	text-align: center;
-	padding: 10px;
-	font-size: 23px;
-	min-height: 40px;
-	line-height: 200%;
-	padding-bottom: 0px;
+
+.topMenu{
+  background: #00000045;
+  
 }
-.menu-items > li {
-	display: inline-block;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-right: 20px;
-}
-.menu-items a{
-	color: white;
-	text-decoration: none;
-}
-.menu-items a:hover{
-	color: #0a2b42;
-}
-.Front{
-	position: relative;
-	text-align: center;
-}
-#imageFront{
+
+.overlay{
+	position: absolute;
 	width: 100%;
-	height: 60%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+
+}
+nav{
+	text-align: center;
+}
+.menu-items {
+	display: inline-block;
+  list-style-type: none;
+	text-align: center;
+  padding: 10px;
+  font-size: 23px;
+  min-height: 40px;
+  line-height: 200%;
+  padding-bottom: 0px;
+}
+
+.menu-items>li {
+	text-align: center;
+	float: left;
+	position: relative;
+	display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 20px;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-items a:hover {
+  color: #0a2b42;
+}
+
+.Front {
+  position: relative;
+	display: block;
+}
+
+.imageFront {
+	width: 100%;
+  max-height: 700px;
+  min-height: 450px;
 	display: inline;
 }
-.FrontText{
-	position: absolute;
-	transform: translate(-50%, -50%);
-	text-shadow: 0px 0px 8px #000000;
-	letter-spacing: 3px;
+
+.FrontText {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 18px #000000;
+  letter-spacing: 3px;
+
 }
-#Profile{
-	letter-spacing: 5px;
-	font-size: 48px;
-	top: 40%;
-	left: 50%;
+.trend{
+  color: #16a085;
+  font-weight: bold;
 }
-#Job{
-	font-size: 22px;
-	top: 55%;
-	left: 50%;
+
+#Profile {
+  letter-spacing: 5px;
+  font-size: 48px;
+  top: 18%;
+  left: 55%;
 }
-.line{
-	background: #03c2fc;
-	width: 20%;
-	height: 1px;
-	margin: auto;
-	margin-bottom: 25px;
+
+#Job {
+  font-size: 22px;
+  top: 31%;
+  left: 61%;
 }
-.Omnie{
-	color: white;
+
+.blueLine {
+  background: #03c2fc;
+  width: 20%;
+  height: 0.75px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.greenLine {
+  background: #16a085;
+  width: 20%;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.aboutMe {
+	margin-top: 5%;
+}
+.KimJestem{
 	border: double;
-}
-.title{
-	font-size: 30px;
-	text-align: center;
-	letter-spacing: 3px;
-	width: 100%;
-	float: left;
-	margin-bottom: auto;
-}
-.First{
-	width: 70%;
-	float: left;
-}
-.Second{
-	width: 30%;
-	float: left;
-	text-align: center;
-	display: block;
-}
-.Edukacja{
-	float: left;
-	margin-top: 25px;
-	padding: 25px;
-}
-.Tools{
-	weight: 70%;
-	height: auto;
-	float: left;
-	text-align: right;
-	padding: 5px;
-	margin-left: 10%;
-	padding: 5px;
-
-	font-size: 17px;
-	font-style: italic;
-}
-.Rating{
-	weight: 30%;
-	height: auto;
-	float: left;
-	margin-left: 10%;
-	padding: 5px;
-	color: #00FF7F;
-	font-size: 17px;
-	font-style: italic;
-	font-weight: 600;	
+	border-color: rgba(0%, 0%, 100%, 0);
+	height: 200px;
 }
 
-#ProfilePhoto{
-	width: 20%;
-	max-width: 60%;
-	height: auto;
-	padding: 25px;
-	float: left;
+.title {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  width: 100%;
+  float: left;
+  margin-bottom: auto;
 }
-#PJATKPhoto{
-	width: 40%;
-	max-width: 80%;
-	height: auto;
-	float: left;
-	padding-right: 25px;
+
+.First {
+  animation: slide-up 1s ease;
+  float: left;
+	margin-left: 10%;
+	margin-right: 10%;
 }
-#AvivaPhoto{
-	width: 60%;
-	max-width: 100%;
-	height: auto;
-	padding: 25px 0px 25px 25px;
-	margin-top: 25px;
+
+.Second {
+  width: 30%;
+  float: left;
+  text-align: center;
+  display: block;
 }
-.Doswiadczenie{
-	display: inline-block;
-	margin-bottom: 75px;
-	margin-top: 50px;
+
+.Edukacja {
+  float: left;
+  margin-top: 25px;
+  padding: 25px;
 }
-.leftSide{
-	float: left;
-	width: 30%;
+
+.Tools {
+  weight: 70%;
+  height: auto;
+  float: left;
+  text-align: right;
+  padding: 5px;
+  margin-left: 10%;
+  padding: 5px;
+  font-size: 17px;
+  font-style: italic;
 }
-.rightSide{
-	float: left;
-	width: 70%;
+
+.Rating {
+  weight: 30%;
+  height: auto;
+  float: left;
+  margin-left: 10%;
+  padding: 5px;
+  color: #00FF7F;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 600;
 }
-.Kontakt{
-	background-color: #E4E4E4;
-	color: #000000;
-	padding-top: 20px;
+
+#ProfilePhoto {
+  width: 20%;
+  max-width: 60%;
+  height: auto;
+  padding: 25px;
+  float: left;
+
+}
+
+#PJATKPhoto {
+  width: 40%;
+  max-width: 80%;
+  height: auto;
+  float: left;
+  padding-right: 25px;
+}
+
+#AvivaPhoto {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  padding: 25px 0px 25px 25px;
+  margin-top: 25px;
+}
+#AkmfPhoto {
+  top: 10%;
+  min-width: 40%;
+  max-width: 80%;
+  height: auto;
+  padding: 25px 0px 25px 25px;
+  margin-top: 25px;
+}
+
+.Doswiadczenie {
+  /*display: inline-block;
+  margin-bottom: 75px;*/
+  float: left;
+  margin-top: 50px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.leftSide {
+  float: left;
+  width: 30%;
 	padding-bottom: 40px;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	font-size: 20px;
 }
-.title2{
-	color: #5B5B5B;
-}
-.WriteToMe{
 
-	height: 60%;
-	width: 100%;
-	margin-top: 40px;
+.rightSide {
+  margin-top: 20px;
+  float: left;
+  width: 70%;
+	padding-bottom: 40px;
+}
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  padding-bottom: 100px;
+}
 
-	text-align: center;
+.row{
+  display: block;
+  margin-right: 5%;
+  margin-left: 8%;
+  text-align: justify;
+  box-sizing: border-box;
+
 }
-.contactMe{
-	height: 5px;
-	width: 205px;
-	padding: 15px;
-	margin-left: 5px;
-	margin-right: 5px;
+.leftRow{
+  display: block;
+  width: 46%;
+  float: left;
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 5%;
+  padding-top: 30px;
+
 }
-#Opis{
-	margin-top: 25px;
-	height: 130px;
-	width: 410px;
+.rightRow{
+  padding-top: 30px;
+  width: 43%;
+  float: left;
+  /*padding-left: 40px;*/
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
-.ListOption{
-	display: block;
-	height: 45px;
-	width: 100%;
+
+.Kontakt {
+  background-color: #E4E4E4;
+  color: #000000;
+  padding-top: 50px;
+  padding-bottom: 140px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
 }
-#ListOfOptions{
-	float: left;
-	margin-left: 30%;
-	margin-top: 15px;
-	height: 30px;
-	width: 135px;
-}
-#checkList{
-	margin-top: 15px;
-	margin-left: 29%;
-	text-align: left;
-}
-.checkListOption{
-	padding: 4px;
-}
-#ChooseList{
-	margin-top: 15px;
-	margin-left: 29%;
-	float: left;
-}
-.ChooseOption{
-	font-weight: bold;
-	padding: 5px;
-	float: left;
-	text-align: center;
-}
-.email{
-	width: 100%;
-	height: 50px;
-	float: left;
-	margin-top: 15px;
-}
-#emailInput{
-	height: 30px;
-	width: 200px;
-	padding: 5px;
-}
-.Buttons{
-	margin-top: 15px;
-	float: left;
-	height: 50px;
-	width: 100%;
-}
-.SendMessage{
-	float: left;
-	height: 30px;
-	width: 80px;
-	padding: 20px;
-}
-#kobieta{
-	float: left;
-	text-align: left;
-}
-#facet{
-	float: left;
-	text-align: left;
+
+.title2 {
+  color: #5B5B5B;
 }

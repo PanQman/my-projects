@@ -10,7 +10,14 @@
 
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+	<script src="slider.js" ></script>
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="slider.css">
+	<link rel="stylesheet" href="animation.css">
 	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 
@@ -23,71 +30,58 @@
 <body>
 	<div>
  <main>
-	<div>
-		<nav>
-			<ul class="menu-items">
-				<li><a href="#">START</a></li>
-				<li><a href="#">O mnie</a></li>
-				<li><a href="#">Doświadczenie</a></li>
-				<li><a href="#">Kontakt</a></li>
-			</ul>
-		</nav>
-	</div>
-
 
 		<section class="Front">
-			<img id="imageFront" src="img/pixabay_sunrise-3321156_1920.jpg" alt="imageFront">
-				<header>
-					 <div id="Profile" class="FrontText">ADAM PAŹ</div>
-				 </header>
-				<div id="Job" class="FrontText">TESTER AUTOMATYZUJĄCY</div>
-		</section>
+				<img src="img/coding.jpg" class="imageFront" alt="imageFront">
+			<div class="overlay"/>
 
+
+					<div>
+						<nav class="topMenu">
+							<ul class="menu-items">
+								<li><a href="#">O mnie</a></li>
+								<li><a href="#">Doświadczenie</a></li>
+								<li><a href="#">Umiejętności</a></li>
+								<li><a href="#">Kontakt</a></li>
+							</ul>
+
+						</nav>
+					</div>
+
+					 <div id="Profile" class="FrontText element-animation">ADAM PAŹ</div>
+
+				<div id="Job" class="FrontText element-animation"> <a class="trend">[</a> Java Developer <a class="trend">]</a></div>
+		</section>
+	<div></div>
 
 		<section class="Omnie">
 
 				<header class="title">
 					<h1>O MNIE</h1>
-					<div class="line"></div>
+					<div class="blueLine"></div>
 				</header>
 
 			<div class="First">
 
 				<div class="KimJestem">
-					<img id="ProfilePhoto" src="img/ja.jpg" alt="imageProfile">
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non congue ex. Suspendisse potenti. Nam cursus nunc et libero elementum fringilla. Proin varius sit amet mi ac congue. Mauris laoreet tempus tempor. Pellentesque ullamcorper, diam sed condimentum viverra, urna nisl volutpat augue, at accumsan neque urna vitae nunc. Donec nisi quam, placerat in ante quis, porttitor convallis turpis. Etiam maximus volutpat lobortis. Duis convallis diam nec neque mattis rhoncus. Nullam vulputate ac velit ut porttitor. Fusce lobortis, odio non ullamcorper eleifend, nunc odio egestas risus, non tincidunt nisi mauris et est. Donec non nulla erat. Cras a elit fermentum, venenatis ligula vel, pulvinar dolor. Maecenas vel sem id augue consequat blandit. Suspendisse id sollicitudin ligula, sit amet sodales ex.</p>
+					<img id="ProfilePhoto" src="img/me.png" alt="imageProfile">
+					<div class="aboutMe">
+						<a>Nazywam się Adam Paź, (niedługo) abslowent PJATK w Warszawie na kierunku Informatyka (studia pierwszego stopnia). Programowaniem zacząłem się uczyć od 2016 roku, tj. gdy zaczałem swoje początki na uczelni. Moim pierwszym poważnym językiem prograrmowania była Java, do dnia
+							dzisiejszego rozwijam się w tym języku.
+							<br><br>
+							Rozpocząłem swoją kariere w IT jako tester oprogramowania, starając się wdrożyć w świat IT. Jestem ukierunkowany na rozwinięcie swoich umiejętności jako developer. Często przesiaduje na platformie udemy aby te wiedzę poszerzać.
+						</a>
+					</div>
 				</div>
 				<div class="Edukacja">
 					<img id="PJATKPhoto" src="img/PJATK.jpg" alt="imageProfile">
-					<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis maximus venenatis. Maecenas magna dolor, laoreet in iaculis at, mollis sit amet eros. Aliquam erat volutpat. Proin placerat tellus sed mi congue, id ultricies justo finibus. Quisque porttitor ac lorem eget blandit. Phasellus elementum erat vel nisi tristique, quis dapibus ante rhoncus.</a>
-				</div>
-
-			</div>
-			<div class="Second">
-
-				<div class="Skills">
-					<div class="Tools">
-						<p>Java</p>
-						<p>Selenium</p>
-						<p>SQL</p>
-						<p>GIT</p>
-						<p>UML</p>
-						<p>HTML/CSS</p>
-
-
-					</div>
-					<div class="Rating">
-						<p>5/10</p>
-						<p>4/10</p>
-						<p>5/10</p>
-						<p>6/10</p>
-						<p>7/10</p>
-						<p>5/10</p>
-
+					<div class="aboutMe">
+						<a>Studia na PJATK zacząłem w 2016 roku, tam zacząłem na poważnie uczyć się programowania i wdrażać się w świat IT.
+						<br><br>
+						W trakcie studiów, poznałem również podstawy Oracle, MSSQL, UML niezbędne do pracy dla programisty. Pisałem projekty zaliczeniowe z wykorzystaniem Javy, ale również w innych technolgiach jak NodeJs (dostępne w moim repo).
+						</a>
 					</div>
 				</div>
-
 
 			</div>
 		</section>
@@ -95,24 +89,132 @@
 		<section class="Doswiadczenie">
 			<header class="title">
 				<h1>DOŚWIADCZENIE</h1>
-				<div class="line"></div>
+				<div class="greenLine"></div>
 			</header>
-			<div class="leftSide">
-				<img id="AvivaPhoto" src="img/aviva.jpg" alt="imageProfile">
+
+			<div id="slideshow">
+			   <div>
+					 <div class="leftSide">
+						 <img id="AvivaPhoto" src="img/aviva.jpg" alt="imageProfile">
+					 </div>
+					 <div class="rightSide">
+						 <a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
+							 <br><br>
+						 <a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
+							 <br><br>
+						 <a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
+					 </div>
+			   </div>
+			   <div>
+					 <div class="leftSide">
+		 				<img id="AkmfPhoto" src="img/akmf.png" alt="imageProfile">
+		 			</div>
+		 			<div class="rightSide">
+		 				<a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
+		 					<br><br>
+		 				<a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
+		 					<br><br>
+		 				<a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
+		 			</div>
+			   </div>
 			</div>
-			<div class="rightSide">
-				<a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
-					<br><br>
-				<a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
-					<br><br>
-				<a>Nulla non lectus quis ligula egestas vestibulum. Mauris erat libero, scelerisque ac luctus vel, tristique sed urna. Curabitur est elit, pretium a velit at, tempor condimentum justo. In vitae gravida risus.</a>
-			</div>
+		</section>
+
+
+		<section class="Umiejętności">
+		<div class="container" >
+				<header class="title" style="padding-bottom: 40px;">
+					<h1>UMIEJĘTNOŚCI</h1>
+					<div class="blueLine"></div>
+				</header>
+
+				<div class="row" >
+
+				            <div class="leftRow">
+				                <article class="experience">
+				                    <header>
+				                        <h3>Praca inżynierska "Giełda Kryptowalut"</h3>
+				                        <p>Pisana w 3-osobowej grupie w ramach pracy dyplomowej</p>
+				                    </header>
+				                    <p>
+															Aplikacja Webowa skierowana dla użytkowników, którzy nie mieli dotychczas wiedzy ani praktyki na giełdzie kryptowalut.
+															Aplikacja pozwala na kupno, sprzedaż dostępnych na rynku kryptowalut, użytkownik może spróbować zacząć swój "trening"
+															na giełdzie i dokonywać transakcji. Aplikacja pobiera na bieżąco aktualne kursy kryptowalut, aby symulacja
+															oddzwierciedleniem rzeczywistości. W ramach pracy grupowej napisałem funkcjonlaność zmiany hasła dla użytkownika,
+															testy automatyczne, utworzenie i skonfigurowanie joba w Jenkins który uruchamia testy automatyczne.
+				                    </p>
+				                    <p>
+				                        Technologie: Java, Spring, Oracle, UML, Selenium, Jenkins, AWS
+				                    </p>
+				                </article>
+				            </div>
+
+				            <div class="rightRow">
+				                <article class="experience">
+				                    <header>
+				                        <h3>Ukończony Kurs Spring<br></h3>
+				                        <p>Prowadzony przez Chad Darby</p>
+				                    </header>
+				                    <p>
+															42-godzinny kurs prowadzony na platformie Udemy (wyróżniony jako bestseller), obejmujący naukę framework-a Spring od
+															początku do dobrych praktyk. W trakcie kursu pisałem kod równolegle z prowadzącym, aby lepiej przyswoić nabywaną wiedzę.
+															Kod pisałem w Intellij-u, w kursie był on pisany w Eclipsie. W trakcie nauki wrzuciłem kod który pisałem na swoje
+															repozytorium dostępne na dole. Nauka Spring-a pozwoliła mi na napisanie funkcjonalności do pracy inżynierskiej (po lewej).
+															Po ukończonym kursie nabyłem certyfikat ukończenia dostępny na profilu na LinkedIn.
+														</p>
+				                    <p>
+				                        Nabyta wiedza: Spring Core, MVC, AOP, Security, Rest, SpringBoot & Hibernate
+				                    </p>
+				                </article>
+				            </div>
+				  </div>
+
+					<div class="row" >
+
+											<div class="leftRow" >
+													<article class="experience">
+															<header>
+																	<h3>Własna strona domowa (wizytówka)</h3>
+																	<p></p>
+															</header>
+															<p>
+																Napisana przez mnie strona domowa, będąca swego rodzaju wizytówką. Do utworzenia tej strony nie korzystałem
+																z bootstrap-a, w całości ją zaprojektowałem. Wykorzystałem ogólnodostępne elementy do budowy
+																strony tj. animacje, przejścia. Nie jestem front-endowcem, z tego względu strona ta może wydawać się uboga ;)
+															</p>
+															<p>
+																	Strona napisana w technologiach: HTML, CSS, jQuery
+															</p>
+													</article>
+											</div>
+
+											<div class="rightRow">
+													<article class="experience">
+															<header>
+																	<h3>Kurs "Automatyzacja testów z wykorzystaniem Selenium"</h3>
+																	<p></p>
+															</header>
+															<p>
+																W ramach kursu na platformie javastart.pl poznałem podstawy pisania testów automatycznych z wykorzystaniem
+																framework-a Selenium do Javy. Poznałem również dobre praktyki w pisaniu kodu (nie tylko w pisaniu testów automatycznych),
+																tj. DRY, KISS, SOLID, wzorcach (Page Object Pattern, Fabryka). W ramach kursu napisałem prosty test automatyczny (dostępny w moim repo) które polega na zalogowaniu
+																się na konto na twitterze i napisaniu prostego twetta.
+															</p>
+															<p>
+																	Technologie: Java, Selenium, XPath
+															</p>
+													</article>
+											</div>
+
+						</div>
+
+		</div>
 		</section>
 
 		<section class="Kontakt">
 			<header class="title">
 				<h1 class="title2">KONTAKT</h1>
-				<div class="line"></div>
+				<div class="blueLine"></div>
 			</header>
 			<a>Chętnie nawiążę kontakt z nowymi osobami, nie tylko z branży</a>
 			<p>Zachęcam do kontaktu poprzez LinkedIn, który częściej odwiedzam niż pocztę</p>
@@ -122,55 +224,9 @@
 			<a href="https://github.com/PanQman" class="icon-github-circled"></a>
 		</section>
 
-		<div class="WriteToMe">
-			<form method="post">
-				<div>
-					<input class="contactMe" type="text" name="imie" placeholder="Twoje imię (wymagane)">
-					<input class="contactMe" type="text" name="nazwisko" placeholder="Twoje nazwisko (wymagane)">
-				</div>
-
-				<div>
-					<input id="Opis" class="contactMe" type="text" name="Opis" placeholder="Napisz do mnie (wymagane)">
-				</div>
-				<div class="ListOption">
-					<select id="ListOfOptions">
-					  <option value="Oferta">Oferta Pracy</option>
-					  <option value="Znajmosc">Znajmość</option>
-					  <option value="Pomoc">Pomoc</option>
-					</select>
-				</div>
-				<div id="checkList">
-					<div class="checkListOption"><input type="checkbox">Java</div>
-					<div class="checkListOption"><input type="checkbox">Selenium</div>
-					<div class="checkListOption"><input type="checkbox">HTML/CSS</div>
-					<div class="checkListOption"><input type="checkbox">SQL</div>
-				</div>
-
-				<div id="ChooseList">
-
-					<div class="ChooseOption">
-						<input type="radio" id="kobieta" name="radiob" value="kobieta" checked><label for="kobieta">Kobieta</label>
-					</div>
-					<br>
-					<div class="ChooseOption">
-						<input type="radio" id="facet" name="radiob" value="facet"><label for="Mężczyzna">Mężczyzna</label>
-					</div>
-
-				</div>
-
-				<div class="email">
-					<input id="emailInput" type="text" name="email" placeholder="Twój e-mail (wymagane)">
-				</div>
-
-				<div class="Buttons">
-					<input type="submit" value="Wyślij">
-					<input type="reset" value="Wyczyść">
-				</div>
-
-			</form>
-		</div>
-
 </main>
 </div>
+
 </body>
+
 </html>
