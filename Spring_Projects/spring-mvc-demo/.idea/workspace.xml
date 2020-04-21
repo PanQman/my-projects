@@ -6,12 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcd05e2-af53-4b5b-9888-c9b1bf857fd3" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="8fcd05e2-af53-4b5b-9888-c9b1bf857fd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-demo.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -30,26 +39,23 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1Z5pYKdIxlDSqcQrKksaKMmb7JW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../test-selenium" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.31" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -202,10 +208,27 @@
       <workItem from="1584138858597" duration="947000" />
       <workItem from="1584181221757" duration="8288000" />
       <workItem from="1584298316028" duration="2980000" />
+      <workItem from="1584362272868" duration="806000" />
+      <workItem from="1586341215644" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="-22" key="FileChooserDialogImpl" timestamp="1586341232898">
+      <screen x="1920" y="-283" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="-22" key="FileChooserDialogImpl/0.0.1536.824/1920.-283.1920.1040@1920.-283.1920.1040" timestamp="1586341232898" />
+    <state x="2360" y="-189" key="SettingsEditor" timestamp="1584363466412">
+      <screen x="1920" y="-283" width="1920" height="1040" />
+    </state>
+    <state x="2360" y="-189" key="SettingsEditor/0.0.1536.824/1920.-283.1920.1040@1920.-283.1920.1040" timestamp="1584363466412" />
+    <state x="2501" y="15" key="com.intellij.ide.util.TipDialog" timestamp="1586341218231">
+      <screen x="1920" y="-283" width="1920" height="1040" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.-283.1920.1040@0.0.1536.824" timestamp="1584362272864" />
+    <state x="2501" y="15" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.-283.1920.1040@1920.-283.1920.1040" timestamp="1586341218231" />
   </component>
 </project>

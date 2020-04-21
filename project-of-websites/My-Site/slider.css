@@ -1,4 +1,4 @@
-#slideshow {
+.slideshow {
     margin: 50px auto;
     margin-top: 200px;
     position: relative;
@@ -9,7 +9,8 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-#slideshow > div {
+.slideshow > div {
+	display: none;
     position: absolute;
     top: 10px;
     left: 10px;

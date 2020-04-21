@@ -7,6 +7,12 @@ body {
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 .topMenu{
   background: #00000045;
   
@@ -26,6 +32,7 @@ nav{
 	text-align: center;
 }
 .menu-items {
+	font-family: 'Amiko', sans-serif;
 	display: inline-block;
   list-style-type: none;
 	text-align: center;
@@ -62,7 +69,7 @@ nav{
 
 .imageFront {
 	width: 100%;
-  max-height: 700px;
+  max-height: 800px;
   min-height: 450px;
 	display: inline;
 }
@@ -95,7 +102,7 @@ nav{
 .blueLine {
   background: #03c2fc;
   width: 20%;
-  height: 0.75px;
+  height: 1px;
   margin: auto;
   margin-bottom: 25px;
 }
@@ -108,7 +115,7 @@ nav{
 }
 
 .aboutMe {
-	margin-top: 5%;
+	margin-top: 3%;
 }
 .KimJestem{
 	border: double;
@@ -178,12 +185,14 @@ nav{
 
 }
 
-#PJATKPhoto {
-  width: 40%;
+#PjatkPhoto {
+ 
+  top: 10%;
+  min-width: 40%;
   max-width: 80%;
   height: auto;
-  float: left;
-  padding-right: 25px;
+  padding: 25px 0px 25px 25px;
+  margin-top: 25px;
 }
 
 #AvivaPhoto {
@@ -202,7 +211,7 @@ nav{
   margin-top: 25px;
 }
 
-.Doswiadczenie {
+#Doswiadczenie {
   /*display: inline-block;
   margin-bottom: 75px;*/
   float: left;
@@ -218,7 +227,7 @@ nav{
 }
 
 .rightSide {
-  margin-top: 20px;
+  margin-top: 30px;
   float: left;
   width: 70%;
 	padding-bottom: 40px;
@@ -263,7 +272,7 @@ nav{
 
 }
 
-.Kontakt {
+#Kontakt {
   background-color: #E4E4E4;
   color: #000000;
   padding-top: 50px;
