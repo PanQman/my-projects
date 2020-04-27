@@ -1,31 +1,24 @@
 package com.aopdemo;
 
 import com.aopdemo.DAO.AccountDAO;
-import com.aopdemo.DAO.MembershipDAO;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class MainDemoApp {
+import java.util.List;
+
+public class AfterReturningDemoApp {
 
     public static void main(String[] args) {
+       AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(DemoConfig.class);
 
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(DemoConfig.class);
+       AccountDAO accountDAO = ctx.getBean("accountDAO", AccountDAO.class);
+        boolean flag = false;
+        List<Account> accountList = accountDAO.findAccounts(flag);
 
-        AccountDAO accountDAO = ctx.getBean("accountDAO", AccountDAO.class);
-        accountDAO.addAccount(new Account("Madhu", "Platinum"), true);
+        System.out.println("Main program AfterReturningDemoApp");
+        System.out.println("------");
+        System.out.println(accountList);
+        System.out.println("------");
 
-        MembershipDAO membershipDAO = ctx.getBean("membershipD AO", MembershipDAO.class);
-        membershipDAO.addAccount();
-
-        accountDAO.doWork();
-        membershipDAO.goSleep();
-
-        accountDAO.setName("foobar");
-        accountDAO.setServiceCode("silver");
-
-        String name = accountDAO.getName();
-        String code = accountDAO.getServiceCode();
-
-        ctx.close();
-
+       ctx.close();
     }
 }

@@ -1,29 +1,20 @@
 package com.aopdemo;
 
-import com.aopdemo.DAO.AccountDAO;
+import com.aopdemo.service.TrafficFortuneService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.List;
+import java.util.logging.Logger;
 
-public class AfterFinallyDemoApp {
+public class AroundDemoApp {
+
+    private static Logger logger = Logger.getLogger(AroundDemoApp.class.getName());
 
     public static void main(String[] args) {
-       AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(DemoConfig.class);
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(DemoConfig.class);
+        TrafficFortuneService traffic = ctx.getBean("trafficFortuneService", TrafficFortuneService.class);
 
-       AccountDAO accountDAO = ctx.getBean("accountDAO", AccountDAO.class);
-       List<Account> accountList = null;
-       try {
-           boolean flag = false;
-           accountList = accountDAO.findAccounts(flag);
-       } catch (Exception e) {
-           System.out.println("\n\n Main Program ... caught exception " + e);
-       }
-
-        System.out.println("Main program AfterThrowingDemoApp");
-        System.out.println("------");
-        System.out.println(accountList);
-        System.out.println("------");
-
-       ctx.close();
+        String data = traffic.getFortune(true);
+        logger.info("\nMy fortune is: " + data);
+        ctx.close();
     }
 }

@@ -3,12 +3,13 @@ package com;
 import com.HibernateEntity.Course;
 import com.HibernateEntity.Instructor;
 import com.HibernateEntity.InstructorDetail;
+import com.HibernateEntity.Review;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-public class CreateCoursesDemo {
+public class CreateCourseAndReviewsDemo {
 
     public static void main(String[] args) {
 
@@ -17,25 +18,22 @@ public class CreateCoursesDemo {
                 .addAnnotatedClass(Instructor.class)
                 .addAnnotatedClass(InstructorDetail.class)
                 .addAnnotatedClass(Course.class)
+                .addAnnotatedClass(Review.class)
                 .buildSessionFactory();
 
         Session session = factory.getCurrentSession();
 
         try {
             session.beginTransaction();
-            int id = 1;
-            Instructor instructor = session.get(Instructor.class, id);
+            Course course = new Course("Java");
 
-            Course course1 = new Course("Java");
-            Course course2 = new Course("AWS");
+            course.addReview(new Review("Great Course"));
+            course.addReview(new Review("Bad Course"));
+            course.addReview(new Review("Never Again!"));
 
-            instructor.addCourse(course1);
-            instructor.addCourse(course2);
-
-            session.save(course1);
-            session.save(course2);
+            System.out.println(course.getReviewList());
+            session.save(course);
             session.getTransaction().commit();
-
             System.out.println("Done!");
         } finally {
             session.close();

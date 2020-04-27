@@ -1,6 +1,8 @@
 package com.HibernateEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "instructor")
 public class Instructor {
@@ -22,12 +24,25 @@ public class Instructor {
     @JoinColumn(name = "instructor_detail_id")
     private InstructorDetail instructorDetail;
 
+    @OneToMany(mappedBy = "instructor",
+            cascade = {CascadeType.DETACH, CascadeType.MERGE,
+                    CascadeType.PERSIST, CascadeType.REFRESH})
+    private List<Course> courseList;
+
     public Instructor(){}
 
     public Instructor(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    public void addCourse(Course course){
+        if (courseList == null){
+            courseList = new ArrayList<Course>();
+        }
+        courseList.add(course);     // set up bi-directional relationship
+        course.setInstructor(this); // v
     }
 
     @Override
@@ -69,5 +84,11 @@ public class Instructor {
     }
     public void setInstructorDetail(InstructorDetail instructorDetail) {
         this.instructorDetail = instructorDetail;
+    }
+    public List<Course> getCourseList() {
+        return courseList;
+    }
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
     }
 }

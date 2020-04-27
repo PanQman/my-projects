@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-public class GetCourseAndReviewsDemo {
+public class DeleteCourseAndReviewsDemo {
 
     public static void main(String[] args) {
 
@@ -30,6 +30,8 @@ public class GetCourseAndReviewsDemo {
             Course course = session.get(Course.class, id);
             System.out.println(course);
             System.out.println(course.getReviewList());
+
+            session.delete(course);
 
             session.getTransaction().commit();
             System.out.println("Done!");

@@ -11,7 +11,7 @@
     <title>Zwykły tytuł</title>
 </head>
 <body>
-    <form action="processFormVersion2" method="get">
+    <form action="processFormVersion3" method="get">
         <input type="text" name="yourName" placeholder="What's your name?" />
         <input type="submit">
     </form>

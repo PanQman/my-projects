@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-public class DeleteCoursesDemo {
+public class DeleteCourseDemo {
 
     public static void main(String[] args) {
 
@@ -23,13 +23,10 @@ public class DeleteCoursesDemo {
 
         try {
             session.beginTransaction();
-            int studentId = 4;
-            int courseId = 11;
-            Student student = session.get(Student.class, studentId);
+            int courseId = 14;
             Course course = session.get(Course.class, courseId);
 
-            course.addStudent(student);
-            session.save(course);
+            session.delete(course);
 
             session.getTransaction().commit();
             System.out.println("Done!");

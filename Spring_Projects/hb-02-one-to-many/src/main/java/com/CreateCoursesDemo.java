@@ -8,7 +8,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-public class CreateInstructorDemo {
+public class CreateCoursesDemo {
 
     public static void main(String[] args) {
 
@@ -23,10 +23,17 @@ public class CreateInstructorDemo {
 
         try {
             session.beginTransaction();
-            Instructor instructor = new Instructor("Chad", "Roby", "robin@sinds.com");
-            InstructorDetail instructorDetail = new InstructorDetail("www.youtube.com/ChadRoby", "Science");
-            instructor.setInstructorDetail(instructorDetail); //associate the objects
-            session.save(instructor);
+            int id = 1;
+            Instructor instructor = session.get(Instructor.class, id);
+
+            Course course1 = new Course("Java");
+            Course course2 = new Course("AWS");
+
+            instructor.addCourse(course1);
+            instructor.addCourse(course2);
+
+            session.save(course1);
+            session.save(course2);
             session.getTransaction().commit();
 
             System.out.println("Done!");

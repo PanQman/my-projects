@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.List;
 
-public class AfterThrowingDemoApp {
+public class AfterFinallyDemoApp {
 
     public static void main(String[] args) {
        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(DemoConfig.class);
@@ -13,7 +13,7 @@ public class AfterThrowingDemoApp {
        AccountDAO accountDAO = ctx.getBean("accountDAO", AccountDAO.class);
        List<Account> accountList = null;
        try {
-           boolean flag = true;
+           boolean flag = false;
            accountList = accountDAO.findAccounts(flag);
        } catch (Exception e) {
            System.out.println("\n\n Main Program ... caught exception " + e);

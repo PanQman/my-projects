@@ -1,15 +1,12 @@
 package com;
 
-import com.HibernateEntity.Course;
-import com.HibernateEntity.Instructor;
-import com.HibernateEntity.InstructorDetail;
-import com.HibernateEntity.Review;
+import com.HibernateEntity.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-public class CreateCourseAndReviewsDemo {
+public class CreateCoursesAndStudentsDemo {
 
     public static void main(String[] args) {
 
@@ -19,6 +16,7 @@ public class CreateCourseAndReviewsDemo {
                 .addAnnotatedClass(InstructorDetail.class)
                 .addAnnotatedClass(Course.class)
                 .addAnnotatedClass(Review.class)
+                .addAnnotatedClass(Student.class)
                 .buildSessionFactory();
 
         Session session = factory.getCurrentSession();
@@ -26,13 +24,22 @@ public class CreateCourseAndReviewsDemo {
         try {
             session.beginTransaction();
             Course course = new Course("Java");
+            Course course2 = new Course("SQL");
 
-            course.addReview(new Review("Great Course"));
-            course.addReview(new Review("Bad Course"));
-            course.addReview(new Review("Never Again!"));
+            Student student = new Student("Adam", "Paz", "test@tst.pl");
+            Student student2 = new Student("Emil", "Wilczynski", "akmf@aks.pl");
+            Student student3 = new Student("Robert", "Trudny", "ok@ko.com");
 
-            System.out.println(course.getReviewList());
+            course.addStudent(student);
+            course.addStudent(student2);
+            course.addStudent(student3);
+
+            session.save(student);
+            session.save(student2);
+            session.save(student3);
+
             session.save(course);
+            session.save(course2);
             session.getTransaction().commit();
             System.out.println("Done!");
         } finally {

@@ -1,11 +1,8 @@
 package com.HibernateEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Column;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "student")
@@ -25,12 +22,29 @@ public class Student {
     @Column()
     private String email;
 
+    @ManyToMany(fetch = FetchType.LAZY,
+            cascade = {CascadeType.DETACH, CascadeType.MERGE,
+                    CascadeType.PERSIST, CascadeType.REFRESH})
+    @JoinTable(
+            name = "course_student",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "course_id")
+    )
+    private List<Course> courseList;
+
     public Student(){}
 
     public Student(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    public void addCourse(Course course){
+        if (courseList == null){
+            courseList = new ArrayList<Course>();
+        }
+        courseList.add(course);
     }
 
     @Override
@@ -66,5 +80,11 @@ public class Student {
     }
     public void setEmail(String email) {
         this.email = email;
+    }
+    public List<Course> getCourseList() {
+        return courseList;
+    }
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
     }
 }

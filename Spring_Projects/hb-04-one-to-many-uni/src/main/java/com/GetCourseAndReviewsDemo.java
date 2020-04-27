@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-public class CreateCourseAndReviewsDemo {
+public class GetCourseAndReviewsDemo {
 
     public static void main(String[] args) {
 
@@ -25,14 +25,12 @@ public class CreateCourseAndReviewsDemo {
 
         try {
             session.beginTransaction();
-            Course course = new Course("Java");
+            int id = 10;
 
-            course.addReview(new Review("Great Course"));
-            course.addReview(new Review("Bad Course"));
-            course.addReview(new Review("Never Again!"));
-
+            Course course = session.get(Course.class, id);
+            System.out.println(course);
             System.out.println(course.getReviewList());
-            session.save(course);
+
             session.getTransaction().commit();
             System.out.println("Done!");
         } finally {
