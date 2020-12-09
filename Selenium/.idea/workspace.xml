@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="173c2f01-e3a5-4b14-9cc3-1895297348ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AP.class" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +28,13 @@
   </component>
   <component name="ProjectId" id="1RFGUtwjFpEE2VBNAZTjVw7qok2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -39,19 +45,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="TestNG.TwitterMessage">
     <configuration name="AP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AP" />
       <module name="Simply-Selenium" />
@@ -115,10 +109,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TwitterMessage" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.AP" />
         <item itemvalue="TestNG.TwitterMessage.tweetMessage" />
-        <item itemvalue="TestNG.TwitterMessage" />
         <item itemvalue="TestNG.Wsada.myFirstTest" />
       </list>
     </recent_temporary>
@@ -180,6 +174,68 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-305" y="-891" key="FileChooserDialogImpl" timestamp="1596541161901">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state x="-305" y="-891" key="FileChooserDialogImpl/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541161901" />
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom" timestamp="1596541162851">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162851" />
+    <state width="1877" height="379" key="GridCell.Tab.0.center" timestamp="1596541162851">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.center/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162851" />
+    <state width="1877" height="379" key="GridCell.Tab.0.left" timestamp="1596541162851">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.left/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162851" />
+    <state width="1877" height="379" key="GridCell.Tab.0.right" timestamp="1596541162851">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.right/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162851" />
+    <state width="1877" height="379" key="GridCell.Tab.1.bottom" timestamp="1596541162852">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.bottom/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162852" />
+    <state width="1877" height="379" key="GridCell.Tab.1.center" timestamp="1596541162851">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.center/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162851" />
+    <state width="1877" height="379" key="GridCell.Tab.1.left" timestamp="1596541162851">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.left/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162851" />
+    <state width="1877" height="379" key="GridCell.Tab.1.right" timestamp="1596541162851">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.right/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596541162851" />
+    <state x="-389" y="-822" key="com.intellij.ide.util.TipDialog" timestamp="1596537951509">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state x="-389" y="-822" key="com.intellij.ide.util.TipDialog/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596537951509" />
+    <state x="-703" y="-1025" key="new project wizard" timestamp="1596539421406">
+      <screen x="-1045" y="-1205" width="1920" height="1119" />
+    </state>
+    <state x="-703" y="-1025" key="new project wizard/0.0.1536.824/875.-1200.1920.1119/-1045.-1205.1920.1119@-1045.-1205.1920.1119" timestamp="1596539421406" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Configurations/PropertiesLoader.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Configurations/BrowserOptions/initLocalDriver.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
