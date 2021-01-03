@@ -41,3 +41,5 @@ Spring_Projects/hibernate-demo/lib/
 Spring_Projects/hb-04-one-to-many-uni/lib/
 
 Spring_Projects/hb-03-eager-vs-lazy-demo/lib/
+
+Spring_Projects/spring_mvc_hibernate/out/artifacts/spring_mvc_hibernate_war_exploded/WEB-INF/lib/jaxb-core-2.3.0.jar
